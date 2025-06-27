@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados</title>
+</head>
+<body>
+    <h3 id="nome1"></h3>
+    <h3 id="senha1"></h3>
+    <script>
+        var valores = new URLSearchParams(document.location.search);
+        valores
+
+        var nome1 = document.getElementById("nome1");
+        var senha1 = document.getElementById("senha1");
+
+        nome1.innerText = "Nome: " + valores.get("nome");
+        senha1.innerText = "Senha: " + valores.get("senha");
+    </script>
+</body>
+</html>
